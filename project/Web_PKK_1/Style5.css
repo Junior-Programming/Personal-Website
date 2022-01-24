@@ -1,0 +1,32 @@
+body	{
+	background-image: url(Gambar/Background_4.png);
+}
+
+.container	{
+	color: white;
+	text-align: center;
+	line-height: 10px;
+}
+
+.isi h2 {
+	font-family: Castellar;
+}
+
+.image img {
+	height: 400px;
+	background-position: top center;
+}
+
+.isi span {
+	background-color: rgba(106, 84, 112, 0.7);
+	cursor: pointer;
+}
+
+.isi span:hover {
+	color: yellow;
+	background-color: ;
+}
+
+.isi a {
+	text-decoration: none;
+}

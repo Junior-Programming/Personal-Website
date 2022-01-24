@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Number Courtain Preloader</title>
+</head>
+<body>
+
+	<div class="preloader">
+		<div class="counter">0</div>
+	</div>
+
+	<section>
+		<h2>Welcome back to all! <span>Stay Tuned for More Web . . .!</span></h2>
+
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum dignissimos distinctio delectus, at velit sed, beatae tenetur doloremque ut optio vero, eum? Cum vitae odio perferendis, nemo laborum praesentium?. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, ratione eius eligendi consequuntur velit nemo aliquid repellat aspernatur officia sapiente voluptatibus quia laboriosam labore, quis, facilis consectetur voluptatem cumque quisquam!
+
+			<br><br>
+
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus. Quisquam necessitatibus aperiam fugiat eveniet suscipit officiis tenetur autem quidem, architecto molestiae eaque ab facere ex maiores. Exercitationem, id, necessitatibus!. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Cum, hic, esse, commodi quam quos laboriosam delectus illum est dolor deleniti obcaecati iusto libero distinctio incidunt asperiores consequatur. Ad eligendi, ipsum.
+		</p>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script>
+		function counter() {
+			var count = setInterval(function() {
+				var c = parseInt($('.counter').text());
+				$('.counter').text((++c).toString());
+				if (c == 100) {
+					clearInterval(count);
+					$('.counter').addClass('hide')
+					$('.preloader').addClass('active')
+				}
+			}, 60)
+		}
+		counter()
+	</script>
+	
+</body>
+</html>

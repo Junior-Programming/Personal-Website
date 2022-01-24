@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="Style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coba Tab 3</title>
+</head>
+<body>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+
+		<button class="tablink" onclick="openCity(event, 'Paris')">Paris</button>
+
+		<button class="tablink" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+	</div>
+
+	<div id="london" class="tabcontent"><span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+		<h3>London</h3>
+		<p>London id the capital city of England</p>
+	</div>
+
+	<div id="Paris" class="tabcontent"><span onclick="this.parentElement.style.display = 'none'" class="topright">&times</span>
+		<h3>Paris</h3>
+		<p>Paris is the capital of France</p>
+	</div>
+
+	<div id="Tokyo" class="tabcontent"><span onclick="this.parentElement.style.display = 'none'" class="topright">&times</span>
+		<h3>Tokyo</h3>
+		<p>Tokyo is the capital of Japan</p>
+	</div>
+
+	<!-- Js -->
+	<script type="text/javascript">
+		function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+	
+</body>
+</html>

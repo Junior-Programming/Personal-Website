@@ -1,0 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	transform: rotate(-91deg);
+	position: relative;
+	left: -3px;
+}
+
+body {
+	font-family: Arial, Helvatica, sans-serif;
+	font-size: 20px;
+	background-color: #fff;
+	color: #333;
+}
+
+.container {
+	padding: 20px 150px;
+}
+
+h1 {
+	font-size: 32px;
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+hr {
+	margin: 40px 0;
+}
+
+p {
+	margin-bottom: 30px;
+	line-height: 1.4em;
+	text-align: justify;
+}
+
+/* Button */
+#back-to-top-btn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	color: black;
+	cursor: pointer;
+	outline: none;
+	border: 3px solid #333;
+	border-radius: 50%;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+	background-color: #333;
+	color: #fff;
+}
+
+@media(max-width: 992px) {
+	#back-to-top-btn { font-size: 22px; width: 40px; height: 33px; }
+}
+
+@media(max-width: 768px) {
+	#back-to-top-btn { font-size: 18px; width: 32px; }
+}
+
+
+/* Animation */
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+
+
+/* Zoom In */
+/*@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	to {
+		opacity: 1;
+	}
+}*/
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+
+
+/* Zoom Out */
+/*@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+
+	}
+}*/
+
+
+/* FadeInUp */
+@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+
+
+/* FadeOutDown */
+@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(10px, 100px, 0px);
+	}
+}

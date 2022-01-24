@@ -1,0 +1,36 @@
+tbody tr td {
+	font-family: Agency FB; 
+	font-size: 21px;
+}
+
+tbody:nth-child(8) {
+	font-family: Agency FB; 
+	font-size: 24px;
+}
+
+.tupoksi h5 {
+	font-family: Agency FB; 
+	font-size: 29px;
+}
+
+.tupoksi p {
+	position: relative; 
+	bottom: 30px; 
+	padding: 10px; 
+	font-family: 
+	Agency FB; 
+	font-size: 23px;
+}
+
+.tugas h5 {
+	font-family: Agency FB; 
+	font-size: 29px;
+}
+
+.tugas ol {
+	position: relative; 
+	bottom: 50px; 
+	font-family: 
+	Agency FB; 
+	font-size: 21px;
+}

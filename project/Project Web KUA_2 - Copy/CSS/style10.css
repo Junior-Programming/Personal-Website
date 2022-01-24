@@ -1,0 +1,31 @@
+@media screen and (max-width: 1125px) {
+	.container .carousel-inner img {
+		width: 100%;
+	}
+
+	.carousel-inner img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 986px) {
+	.img .container img {
+		display: none;
+	}
+} 
+
+
+@media screen and (max-width: 769px) {
+	 .container .p-3 {
+	 	position: relative;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 378px) {
+	.media .container:nth-child(1) {
+		display: flex;
+		justify-content: space-around;
+
+	}
+}

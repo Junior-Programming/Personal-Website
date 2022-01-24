@@ -1,0 +1,106 @@
+body	{
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+	background-image: url(Gambar/Background_3.png);
+}
+
+.container	{
+	width: 800px;
+	margin: auto; 
+	background-color: gainsboro;
+	border-radius: 5px;
+}
+
+.header	{
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+.header .judul	{
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: line-through;
+	font-family: Times New Roman;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+
+}
+
+.hero	{
+	height: 250px;
+	background-image: url(Gambar/mobil_2.jpg);
+	background-size: 50%;
+	background-position: center;
+	border-top: 5px solid salmon;
+	border-bottom: 5px solid lightskyblue;
+}
+
+.conten {
+	padding: 30px; 
+}
+
+.conten h2	{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.conten .penulis	{
+	font-size: 11px;
+	margin-top: -15px;
+	text-align: center;
+}
+
+.conten .penulis a {
+	color: salmon;
+	text-decoration: none;
+}
+
+.conten p {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.footer {
+	background-color: #333;
+	padding: 5px; 
+	border-radius: 5px;
+}
+
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+
+.isi  {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+	border-right: 20px;
+}
+
+.isi h3 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.isi ol li {
+	text-align: center;
+}

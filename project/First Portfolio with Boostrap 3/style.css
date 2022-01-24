@@ -1,0 +1,43 @@
+html {
+	position: absolute;
+}
+
+body {
+	margin-bottom: 100px;
+}
+
+.gambar {
+	width: 200px;
+	height: 200px;
+	border: 4px solid #666;
+}
+
+hr {
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section {
+	min-height: 600px;
+}
+
+.portfolio {
+	background-color: #eee;
+}
+
+.contack {
+	min-height: 8000px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #333;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 1em;
+}

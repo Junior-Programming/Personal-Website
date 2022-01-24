@@ -1,0 +1,68 @@
+/*
+	COLOR : 
+	Sun -> #FEAD03
+	moon -> #000
+	Bakcground -> #fff	
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	animation: ubah-background 10s infinite linear;
+	overflow: hidden;
+}
+
+.container {
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+
+.moon, .sun {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.sun {
+	background: #FEAD03;
+	box-shadow: 0 0 50px #e1b12c;
+}
+
+.moon {
+	background: #000;
+	animation: gerakan-bulan 10s infinite linear, ubah-background 10s infinite linear;
+}
+
+@keyframes gerakan-bulan {
+	0% {
+		right: 160px;
+	}
+
+
+
+	100% {
+		right: -160px;
+	}
+}
+
+@keyframes ubah-background {
+	0% {
+		background: #fff;
+	}
+
+	50% {
+		background: #000;
+	}
+
+	100% {
+		background: #fff;
+	}
+}

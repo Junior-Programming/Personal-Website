@@ -1,0 +1,175 @@
+body	{
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+	background-image: url(background.png);
+}
+
+.container	{
+	width: 800px;
+	margin: auto; 
+	background-color: gainsboro;
+	border-radius: 5px;
+}
+
+.header	{
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+.header .judul	{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+
+}
+
+.hero	{
+	height: 250px;
+	background-image: url(Logo.png);
+	background-position: center;
+	border-top: 5px solid salmon;
+	border-bottom: 5px solid lightskyblue;
+}
+
+section.courses {
+	background-color: #eaeaea;
+	color: #333;
+	float: left;
+	width: 740px;
+	border-right: 1px solid #eeeeee;
+	margin: auto;
+	border-radius: 5px;
+}
+
+article {
+	clear: both;
+	overflow: auto;
+	width: 100%;
+}
+
+hgroup {
+	margin-top: 40px;
+}
+
+figure {
+	float: left;
+	width: 290px;
+	height: 220px;
+	padding: 5px;
+	margin: 20px;
+	border: 1px solid #eeeeee;
+}
+
+figcaption {
+	font-size: 90%;
+	text-align: left;
+}
+
+aside {
+	width: 230px;
+	float: left;
+	padding: 0px 0px 0px 20px;
+}
+
+aside section a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+	color: #985d6a;
+	background-color: #efefef;
+}
+
+a {
+	color: #de6581;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h2 {
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+
+h3 {
+	margin: 0px 0px 10px 0px;
+	color: #de6581;
+}
+
+.img {
+	height: 208px;
+	background-attachment: fixed;
+}
+
+.img1 {
+	height: 208px;
+	background-attachment: fixed;
+}
+
+.img2 {
+	height: 120px;
+	background-attachment: fixed;
+}
+
+.img3 {
+	height: 200px;
+	background-attachment: fixed;
+}
+
+.courses {
+	padding: 30px; 
+}
+
+.courses h2	{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.courses .penulis	{
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.courses .penulis a {
+	color: salmon;
+	text-decoration: none;
+}
+
+.courses p {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.footer {
+	background-color: #333;
+	padding: 5px; 
+	border-radius: 5px;
+}
+
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
